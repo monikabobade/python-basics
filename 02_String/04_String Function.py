@@ -1,0 +1,3 @@
+str = "Learn"
+
+print(str[])
