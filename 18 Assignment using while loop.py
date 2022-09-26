@@ -12,7 +12,7 @@
 #         print(i)
 #  i+=1
 
-# Print sum of all marks
+# Print sum of all marks //test changes
 
 
 # Search a number
