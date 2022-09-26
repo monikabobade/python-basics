@@ -46,15 +46,36 @@
 # Write a python program using function to take
 # runs scored in 5 matches, store it in list and display total runs scored in 5 matches
 
-def Total_run_score():
-    Player_runs = []
-    Sum_of_runs = 0
-    for i in range(1,6):
-        Match = int(input(f"Enter score of match {i}: "))
-        Player_runs.append(Match)
-    for j in Player_runs:
-        Sum_of_runs = Sum_of_runs + j
-    print(f"Total runs scored in 5 matches is {Sum_of_runs}")
-Total_run_score()
+# def Total_run_score():
+#     Player_runs = []
+#     Sum_of_runs = 0
+#     for i in range(1,6):
+#         Match = int(input(f"Enter score of match {i}: "))
+#         Player_runs.append(Match)
+#     for j in Player_runs:
+#         Sum_of_runs = Sum_of_runs + j
+#     print(f"Total runs scored in 5 matches is {Sum_of_runs}")
+# Total_run_score()
 
-
+# Write a program to take player name and runs scored in 5 matches
+# store it in a dictionary and display name and the score for all the players
+#     having century
+# ======================================================================
+# for i in range(1,4):
+#     Match = input(f"Please enter player name {i}")
+# for j in range(1,4):
+#     Match = int(input(f"Please enter run scored {j}"))
+# ===================================================================
+dict = {}
+ply1 = input("Please enter 1st player name")
+score1 = int(input("Please enter 1st score"))
+ply2 = input("Please enter 1st player name")
+score2 = int(input("Please enter 2nd score"))
+ply3 = input("Please enter 1st player name")
+score3 = int(input("Please enter 3rd score"))
+Player = {ply1 : score1, ply2: score2, ply3: score3}
+print(Player)
+for i in Player:
+    # print(f"{i}:{Player[i]}")
+    if Player[i] > 100:
+        print(f"{i}--->{Player[i]}")
